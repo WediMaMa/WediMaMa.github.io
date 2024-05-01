@@ -1,0 +1,66 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>MBMGQ</title>
+  <style>
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#">Forside</a>
+      <a href="#">Om os</a>
+      <a href="#">Booking</a>
+      <a href="#">Kontakt</a>
+    </nav>
+  </header>
+  <main>
+    <div>
+      <img src="billede.jpg" alt="MBMG logo" />
+      <h1>Lidt om os</h1>
+      <p>Vi er en lille mødebooking agency, der kan hjælpe dig med at øge din salg og få flerre kunder, der kan krydses af på kalderen.</p>
+      <p>Vores Agency tilbyde flere former for service, alt fra mødebooking/skaffelse af kunder via digitale medier til Reklame produktion.</p>
+    </div>
+    <div class="contact-form">
+      <h3>Kontakt os!</h3>
+      <form id="kontakt" action="#" method="post">
+        <label for="name">Navn:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Besked:</label>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+        <input type="submit" value="Send!" />
+      </form>
+    </div>
+    <div class="booking-form">
+      <h3>Book en tid</h3>
+      <p><b>Her kan du booke en møde med os og vi gøre mødet klar:</b></p>
+      <form id="booking-form">
+        <label for="booking-date">Dato:</label>
+        <input type="date" id="booking-date" name="booking_date" required>
+        <label for="booking-time">Tid:</label>
+        <input type="time" id="booking-time" name="booking_time" required>
+        <label for="name">Navn:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="service">Service:</label>
+        <select id="service" name="service" required>
+          <option value="mødebooking">Mødebooking</option>
+          <option value="kundeopretning">Kundeopretning</option>
+          <option value="reklameproduktion">Reklameproduktion</option>
+        </select>
+        <button type="submit">Book Now</button>
+      </form>
+    </div>
+  </main>
+  <footer>
+    <p>Copyright &copy; 2023 MBMGQ</p>
+  </footer>
+</body>
+</html>

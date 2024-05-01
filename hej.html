@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MBMGQ</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="my agency" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 100vw;
+        max-height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-gap: 20px;
+        margin: 0 auto;
+      }
+
+      .header {
+        grid-column: 1 / 4;
+        grid-row: 1;
+        background-color: #000;
+        color: #fff;
+        text-align: center;
+      }
+
+      .main-content {
+        grid-column: 1 / 3;
+        grid-row: 2 / 6;
+      }
+
+      .company-logo {
+        width: 100%;
+      }
+
+      .about-us {
+        text-align: center;
+      }
+
+      .join-us {
+        text-align: center;
+      }
+
+      .our-qualities {
+        text-align: center;
+      }
+
+      .contact-agentes {
+        text-align: center;
+      }
+
+      .booking-website {
+        text-align: center;
+      }
+
+      .booking-form {
+        text-align: center;
+      }
+
+      .contact-form {
+        grid-column: 3;
+        grid-row: 2 / 6;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <div class="header">
+        <h1>Velkommen!</h1>
+      </div>
+
+      <!-- Main Content -->
+      <div class="main-content">
+        <!-- Company Logo -->
+        <img class="company-logo" src="" alt="MBMG logo" />
+
+        <!-- About Us -->
+        <div class="about-us">
+          <h1>Lidt om os</h1>
+          <p>
+            Vi er en lille mødebooking agency, der kan hjælpe dig med at øge din salg og få flere kunder, der kan krydses af på kalderen.
+          </p>
+          <p>
+            Vores Agency tilbyder flere former for service, alt fra mødebooking/skaffelse af kunder via digitale medier til Reklame produktion.
+          </p>
+        </div>
+
+        <!-- Join Us -->
+        <div class="join-us">
+          <p>Tilmeld dig, via at teste ind din:</p>
+          <ul>
+            <li><strong>Navn</strong></li>
+            <li><strong>E-mail</strong></li>
+            <li>
+              <strong
+                >Skriv et besked, på beskedfeltet på hvilke slags digitale service du gerne
+                ville have at vi udfører på din vegne.</strong
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Our Qualities -->
+        <div class="our-qualities">
+          <p>To ting der kendetegner os:</p>
+          <ul>
+            <li><strong>Pålidelige</strong></li>
+            <li><strong>Kunden går altid tilfreds</strong></li>
+          </ul>
+        </div>
+
+        <!-- Contact Agentes -->
+        <div class="contact-agentes">
+          <a href="https://agents.dk" target="_blank">Giv en besked til vorres agentes</a>
+        </div>
+
+        <!-- Booking Website -->
+        <div class="booking-website">
+          <h1>Booking Website</h1>
+          <p><b>Her kan du booke en møde med os og vi gør mødet klar:</b></p>
+          <button onclick="alert('This is a JavaScript alert!')">Click me!</button>
+          <script>
+            function alert(message) {
+              window.alert(message);
+            }
+          </script>
+        </div>
+
+        <!-- Booking Form -->
+        <div class="booking-form">
+          <form action="/api/book" method="post">
+            <input type="text" name="name" placeholder="Your name" />
+            <input type="email" name="email" placeholder="Your email" />
+            <input type="date" name="date" placeholder="Booking date" />
+            <input type="time" name="time" placeholder="Booking time" />
+            <input type="submit" value="Book now" />
+          </form>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <h3>Kontakt os!</h3>
+        <form id="kontakt" action="#" method="post">
+          Navn:<br />
+          <input type="text" /><br />
+          Email<br />
+          <input type="email" /><br />
+          Besked:<br />
+          <textarea style="width:100%;height:100%;"
+          
